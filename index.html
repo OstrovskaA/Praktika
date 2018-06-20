@@ -1,0 +1,85 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Game</title>
+     <link rel="stylesheet" type="text/css" href="style.css">
+     <base target="_top">
+  </head>
+
+  <header>
+<div class = "head">
+<br><br><br>
+  <marquee  direction = "right" scrollamount = "15" >
+   <p1> Let's play a game!!! </p1>
+  </marquee>
+</div>
+  </header>
+
+  
+  <body id="top">
+    <div id="game-over">
+        <p2>GAME OVER!!!</p2>
+        <h3 id="final-score"></h3>
+        <h4>Click to play again</h4>
+    </div>
+	<br><br>
+		
+    <article class="controls group">
+         <table>
+           <tr>
+             <th><p3>FUNCTION KEY</p3></th>
+             <th> </th>
+           </tr>
+		   
+           <tr>
+             <td><p4>Rotate</p4></td>
+             <td>▲</td>
+           </tr>
+           
+           <tr>
+             <td><p4>Left</p4></td>
+             <td>◀</td>
+           </tr>
+		   
+           <tr>
+             <td><p4>Right</p4></td>
+             <td>▶</td>
+           </tr>
+		   
+           <tr>
+             <td><p4>Down</p4></td>
+             <td>▼</td>
+           </tr>
+		   <tr>
+             <td><p4>Save Piece</p4></td>
+             <td>Z</td>
+           </tr>
+         </table>
+       </article>
+	   
+	   
+    <div class="canvas-area">
+      <canvas id="tetris" width="240" height="400"></canvas>
+      <ul class="sidebar group">
+        <li class="next-piece">
+          <p3>Next Piece:</p3>
+          <canvas id="nextPiece" width="100" height="100"></canvas>
+        </li>
+        <li class="next-piece">
+          <p3>Saved Piece:</p3>
+          <canvas id="holdPiece" width="100" height="100"></canvas>
+        </li>
+        <div id="score">
+         <p3> Score:</p3>
+        </div>
+        
+        </article>
+      <ul/>
+    </div>
+	
+    <script src="./javascript/board.js"></script>
+    <script src="./javascript/player.js"></script>
+    <script src="./javascript/tetris.js"></script>
+    <script src="./javascript/main.js"></script>
+  </body>
+</html>

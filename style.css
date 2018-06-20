@@ -1,0 +1,131 @@
+body {
+  background-image: url("fon2.jpg");
+  color: #fff;
+  font-family: 'joystix', Times New Roman;
+  font-size: 1.4vw;
+  font-weight: bold;
+  text-align: center;
+}
+
+.head 
+{
+	background-image:url("fon1.jpg");
+	height:120px;	
+}
+
+p1 
+{
+	color:white;
+	font-family: segoe print; 
+	font-weight: bold;
+	font-size: 40px;
+}
+ p2
+ {
+	color:#fff;
+	font-family: CURSIVE; 
+	font-weight: bold;
+	font-size: 100px;
+	 
+ }
+ 
+p3
+ {
+	color:#fff;
+	font-family: gabriola; 
+	font-weight: bold;
+	font-size: 45px;
+	 
+ }
+ p4
+ {
+	color:#fff;
+	font-family: LUCIDA CONSOLE; 
+	font-weight: bold;
+	font-size: 25x;
+	 
+ }
+ 
+ 
+
+
+header {
+  height: 10vh;
+  padding-bottom: 10px;
+}
+
+
+
+li {
+  list-style: none;
+  display: block;
+  float: left;
+}
+
+ul {
+  float: left;
+  width: 20%;
+}
+
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.canvas-area {
+  margin: 0 auto;
+  margin-left: 33vw;
+  text-align: left;
+  font-size: 12px;
+}
+
+.controls {
+  float: left;
+  width: auto;
+}
+
+.sidebar {
+  float: left;
+}
+
+@font-face {
+  font-family: 'joystix';
+  src: url('joystix.eot');
+  src: local('joystix'), local('joystix'),
+         url('joystix.otf') format('opentype');
+}
+
+#tetris, #nextPiece, #holdPiece {
+	margin-left: 9%;
+  border: solid .4em #fff;
+  height: 80vh;
+  width: auto;
+  float: left;
+}
+
+#game-over{
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  vertical-align:bottom;
+  z-index: 1;
+  top: 0;
+  background-image: url("fon.jpg");
+  text-align: center
+}
+
+#holdPiece {
+  width: 20vh;
+  height: auto;
+}
+
+#nextPiece {
+  width: 20vh;
+  height: auto;
+}
+
+#score {
+  margin-top: 20px;
+}
